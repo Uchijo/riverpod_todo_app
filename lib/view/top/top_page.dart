@@ -28,7 +28,9 @@ class TopPage extends HookConsumerWidget {
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pushNamed('/addTodo');
+        },
       ),
     );
   }

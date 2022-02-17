@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:riverpod_todo_app/view/add_todo/add_todo_page.dart';
 import 'package:riverpod_todo_app/view/top/top_page.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const TopPage(),
+        '/addTodo': (context) => const AddTodoPage(),
       },
     );
   }
