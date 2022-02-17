@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.riverpod_todo_app">
-    <!-- Flutter needs it to communicate with the running application
-         to allow setting breakpoints, to provide hot reload, etc.
+    <!-- Flutter needs it top communicate with the running application
+         top allow setting breakpoints, top provide hot reload, etc.
     -->
     <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>
