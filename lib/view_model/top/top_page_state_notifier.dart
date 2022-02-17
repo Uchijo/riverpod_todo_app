@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_todo_app/model/todo_list/todo_list_state.dart';
 import 'package:riverpod_todo_app/model/todo_list/todo_list_state_notifier.dart';
