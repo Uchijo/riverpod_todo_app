@@ -38,8 +38,8 @@ class TopPageStateNotifier extends StateNotifier<TopPageState> {
       }
     }).toList();
 
-    state = state.copyWith(filterType: filterType);
-    state = state.copyWith(exposuredTodoList: newExposuredList);
+    state = state.copyWith(
+        filterType: filterType, exposuredTodoList: newExposuredList);
   }
 
   void editTodo(String subjectUuid, Todo newTodo) {

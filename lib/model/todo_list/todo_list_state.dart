@@ -28,7 +28,7 @@ class Todo with _$Todo {
     required String title,
     String detail = '',
   }) {
-    return Todo(title: title, id: uuid.v4());
+    return Todo(status: status, title: title, detail: detail, id: uuid.v4());
   }
 
   static const uuid = Uuid();

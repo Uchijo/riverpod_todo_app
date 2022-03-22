@@ -11,8 +11,8 @@ class AddTodoStateNotifier extends StateNotifier {
   AddTodoStateNotifier(this.ref) : super(null);
   final AutoDisposeStateNotifierProviderRef ref;
 
-  void addTodo({required String title, String? detail}) {
-    final newTodo = Todo.withId(title: title, detail: detail ?? '');
+  void addTodo({required String title, String detail = ''}) {
+    final newTodo = Todo.withId(title: title, detail: detail);
     ref.read(todoListProvider.notifier).addTodo(newTodo);
   }
 }
