@@ -10,6 +10,10 @@ final todoListProvider =
 class TodoListStateNotifier extends StateNotifier<TodoListState> {
   TodoListStateNotifier() : super(TodoListState());
 
+  Todo? getTodo(String id) {
+    return state.todoList.firstWhere((element) => element.id == id);
+  }
+
   void addTodo(Todo newTodo) {
     state = state.copyWith(todoList: [...state.todoList, newTodo]);
   }
